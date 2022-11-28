@@ -13,6 +13,14 @@
 		3DEA7E2429321AEA00F5183F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA7E2229321AEA00F5183F /* Main.storyboard */; };
 		3DEA7E2629321AEE00F5183F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA7E2529321AEE00F5183F /* Assets.xcassets */; };
 		3DEA7E2929321AEE00F5183F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA7E2729321AEE00F5183F /* LaunchScreen.storyboard */; };
+		3DEA7E3129325E9400F5183F /* BlockEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3029325E9400F5183F /* BlockEditor.swift */; };
+		3DEA7E3429325EE100F5183F /* BlockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3329325EE100F5183F /* BlockData.swift */; };
+		3DEA7E3629325EE900F5183F /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3529325EE900F5183F /* Block.swift */; };
+		3DEA7E3829325F1800F5183F /* BlockTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3729325F1800F5183F /* BlockTypes.swift */; };
+		3DEA7E3A29325F3700F5183F /* BlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3929325F3700F5183F /* BlockCell.swift */; };
+		3DEA7E3D29325F5300F5183F /* ParagraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3C29325F5300F5183F /* ParagraphCell.swift */; };
+		3DEA7E3F29325FAA00F5183F /* BlockToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E3E29325FAA00F5183F /* BlockToolbar.swift */; };
+		3DEA7E422932649000F5183F /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7E412932649000F5183F /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		3DEA7E2529321AEE00F5183F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DEA7E2829321AEE00F5183F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DEA7E2A29321AEE00F5183F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEA7E3029325E9400F5183F /* BlockEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockEditor.swift; sourceTree = "<group>"; };
+		3DEA7E3329325EE100F5183F /* BlockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockData.swift; sourceTree = "<group>"; };
+		3DEA7E3529325EE900F5183F /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		3DEA7E3729325F1800F5183F /* BlockTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTypes.swift; sourceTree = "<group>"; };
+		3DEA7E3929325F3700F5183F /* BlockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockCell.swift; sourceTree = "<group>"; };
+		3DEA7E3C29325F5300F5183F /* ParagraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphCell.swift; sourceTree = "<group>"; };
+		3DEA7E3E29325FAA00F5183F /* BlockToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockToolbar.swift; sourceTree = "<group>"; };
+		3DEA7E412932649000F5183F /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		3DEA7E1B29321AEA00F5183F /* BlockEditor */ = {
 			isa = PBXGroup;
 			children = (
+				3DEA7E402932648400F5183F /* subview */,
+				3DEA7E3B29325F4800F5183F /* cell */,
+				3DEA7E3229325ECB00F5183F /* model */,
 				3DEA7E1C29321AEA00F5183F /* AppDelegate.swift */,
 				3DEA7E1E29321AEA00F5183F /* SceneDelegate.swift */,
 				3DEA7E2029321AEA00F5183F /* ViewController.swift */,
@@ -63,8 +82,37 @@
 				3DEA7E2529321AEE00F5183F /* Assets.xcassets */,
 				3DEA7E2729321AEE00F5183F /* LaunchScreen.storyboard */,
 				3DEA7E2A29321AEE00F5183F /* Info.plist */,
+				3DEA7E3029325E9400F5183F /* BlockEditor.swift */,
+				3DEA7E3929325F3700F5183F /* BlockCell.swift */,
+				3DEA7E3E29325FAA00F5183F /* BlockToolbar.swift */,
 			);
 			path = BlockEditor;
+			sourceTree = "<group>";
+		};
+		3DEA7E3229325ECB00F5183F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA7E3329325EE100F5183F /* BlockData.swift */,
+				3DEA7E3729325F1800F5183F /* BlockTypes.swift */,
+				3DEA7E3529325EE900F5183F /* Block.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3DEA7E3B29325F4800F5183F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA7E3C29325F5300F5183F /* ParagraphCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		3DEA7E402932648400F5183F /* subview */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA7E412932649000F5183F /* TriangleView.swift */,
+			);
+			path = subview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEA7E3829325F1800F5183F /* BlockTypes.swift in Sources */,
 				3DEA7E2129321AEA00F5183F /* ViewController.swift in Sources */,
 				3DEA7E1D29321AEA00F5183F /* AppDelegate.swift in Sources */,
 				3DEA7E1F29321AEA00F5183F /* SceneDelegate.swift in Sources */,
+				3DEA7E3D29325F5300F5183F /* ParagraphCell.swift in Sources */,
+				3DEA7E3F29325FAA00F5183F /* BlockToolbar.swift in Sources */,
+				3DEA7E3629325EE900F5183F /* Block.swift in Sources */,
+				3DEA7E422932649000F5183F /* TriangleView.swift in Sources */,
+				3DEA7E3A29325F3700F5183F /* BlockCell.swift in Sources */,
+				3DEA7E3129325E9400F5183F /* BlockEditor.swift in Sources */,
+				3DEA7E3429325EE100F5183F /* BlockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
